@@ -472,10 +472,14 @@ font-weight: bold;
     width: 49%;
     background-color:#fff;
     padding: 1rem;
+    border-radius: 1.6rem;
 }
 
 .form-wrapper .company-address:hover{
-    border: 2px solid red;
+   /* border: 2px solid red;*/
+    box-shadow: 5px 5px 20px 1px rgba(255, 187, 0, 0.666);
+    border: 1px solid rgba(255, 187, 0, 0.966);
+    /*border-radius: 1.6rem;*/
 }
 
 
@@ -499,6 +503,7 @@ font-weight: bold;
     object-fit: cover;
     object-position: right;
     box-shadow: 5px 5px 20px 0px #263238;
+    border-radius: 1.6em;
 }
 
 .form-wrapper::after{
@@ -518,9 +523,11 @@ font-weight: bold;
     background-color:#fff;
     padding: 1rem;
     font-size: 1.6rem;
+    border-radius: 1.6rem;
 }
 .form-wrapper .form:hover{
-    border: 2px solid red;
+    box-shadow: 5px 5px 20px 1px rgba(255, 187, 0, 0.666);
+    border: 1px solid rgba(255, 187, 0, 0.966);
 }
 .form-wrapper .form h1{
     padding-top: 1rem;
