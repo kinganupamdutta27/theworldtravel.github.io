@@ -130,6 +130,11 @@ border-radius: 10em;
     padding: .5em;
     
 }
+.navbar .container img{
+        display: inline-block;
+        margin: 1rem auto;
+        
+    }
 
 .navbar .nav-items{
     font-size: 3rem;
@@ -592,6 +597,16 @@ font-weight: bold;
     .header-content p{
         display: none;
     }
+
+    .navbar .container img{
+        display: inline-block;
+        margin: 1rem auto;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-10%);
+    }
+
     .header-content h1{
         margin-bottom: 5rem;
     }
