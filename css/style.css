@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,800&family=Noto+Color+Emoji&family=Poppins:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*#################### HTML Element Stylings ###############*/
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', 'sans-serif';
+    line-height: 1.6rem;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,li{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 500;
+}
+
+/*######################################################*/
+
+/*################ Utility Classes #####################*/
+
+.container{
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn{
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0;
+}
+
+.btn-primery{
+background-color: #fff;
+border-radius: 10em;
+}
+.btn-primery:hover{
+    background-color: #ddd;
+    font-weight: bold;
+}
+.btn-secondary{
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #ffd1ccc7;
+    font-weight: bold;
+}
+.lg-heading{
+    font-size: 3.5rem;
+}
+
+.md-heading{
+    font-size: 2.2rem;
+}
+
+.sm-heading{
+    font-size: 1.6rem;
+}
+
+.text-red{
+    color: #e63946;
+}
+
+.text-light{
+    color: #f4f4f4;
+}
+
+.text-black{
+    color: #333333;
+}
+
+.text-gray{
+    color: #555555;
+}
+
+.bg-dark{
+    background-color: #263238;
+}
+/*##########################################################*/
+
+/*################ Header Stylings #########################*/
+
+.header{
+    height: 95vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../img/header-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.navbar{
+    border: 0px solid white;
+    padding: 1rem;
+}
+
+
+.navbar .logo{
+    float: left;
+    font-size: 3.5rem;
+    padding: .5em;
+    
+}
+
+.navbar .nav-items{
+    font-size: 3rem;
+    margin-top: 1rem;
+    float: right;
+}
+
+.navbar .nav-item{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.header .navbar::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.navbar a:link,
+.navbar a:visited{
+    color: #f4f4f4;
+}
+.navbar a{
+    padding-bottom: 0.3rem;
+}
+.navbar a:hover{
+    border-bottom: 2px solid #f4f4f4;
+}
+
+/*#####################################################*/
+
+/*########### Header Content Styling ##################*/
+
+.header-content{
+    border: 0px solid wheat;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 1.6rem;
+    line-height: 3.5rem;
+    background: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+}
+
+.header-content h1{
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header-content p{
+    text-transform: uppercase;
+    margin: 3rem 0;
+}
+
+/*#####################################################*/
+/*############ Show Case Section Styling ##############*/
+
+.showcase{
+    background-color: #ddd;
+    padding: 10rem 0;
+}
+.row{
+    height: 320px;
+    border: 1px solid red;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px #333333;
+}
+.row1{
+    margin-bottom: 10rem;
+}
+.row1 .img-box, .row2 .text-box{
+    float: left;
+    width: 50%;
+} 
+.row1 .text-box, .row2 .img-box{
+    float: right;
+    width: 50%;
+} 
+
+.row .img-box{
+    height: 100%;
+    /*border: 2px solid green;*/
+}
+.row .text-box{
+    /*border: 2px solid red;*/
+    padding: 3rem;
+}
+
+.row .img-box img{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.row .text-box p{
+    margin-top: 3.2rem;
+    line-height: 2.2rem;
+    text-align: justify;
+}
+/*#####################################################*/
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*############### Features Section Stying #############*/
+
+.features{
+    padding: 10rem 0;
+}
+
+.box-wrapper{
+    
+    box-shadow: 5px 5px 20px 0 #555555;
+    background-color: #263238;
+    
+}
+
+.box{
+    width: 33.3334%;
+    float: left;
+    padding: 2rem;
+    text-align: center;
+    line-height: 2rem;
+    
+}
+
+.box-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.box1, .box3{
+    background-color: #263238;
+    color: antiquewhite;
+}
+
+.box2{
+    background-color: #FF3CAC;
+background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+color: #fff;
+
+}
+.box i{
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+.box h1{
+    margin-bottom: 1.6rem;
+}
+
+
+/*#####################################################*/
+/*###################### Footer Stylings ##############*/
+
+.footer{
+    background-color: #263238;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+.social-media-links i{
+    margin: 2rem;
+}
+
+.footer .social-media-links a{
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 1.2rem;
+}
+.footer .social-media-links i:hover{
+    border-radius: 10rem;
+    box-shadow: 5px 5px 20px 0px rgba(245, 222, 179, 0.548);
+}
+.footer .social-media-links i:active{
+    border-radius: 10rem;
+    box-shadow: 5px 5px 20px 0px rgba(43, 255, 0, 0.712);
+}
+/*.footer{
+    border: 1px solid black;
+    background-color: #263238;
+    position: relative;
+    height: 180px;
+}
+.social-media-links{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+}
+.social-media-links i{
+    letter-spacing: 3.5rem;
+    color: #fff;
+}
+.footer p{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: inline-block;
+    color: #fff;
+    
+}*/
+/*#####################################################*/
+/*###################### About Page Stylings ##############*/
+
+.about{
+    padding: 5rem 0rem;
+}
+
+.about .container{
+    padding-top: 1.6rem;
+    padding-left: 1.6rem;
+    border: 0px solid black;
+}
+
+/*.about-heading{
+    padding-bottom: 2.5rem;
+    border-bottom: 4px solid #e63946;
+    width: 50%;
+}
+*/
+.about-heading::after{
+    display: block;
+    content: " ";
+    border: 2px solid #e63946;
+    width: 100%;
+    margin-top: 2.5rem;
+}
+.about-wrapper{
+    margin-top: 1.6rem;
+    text-align: center;
+}
+.about-wrapper .left{
+    float: left;
+    width: 50%;
+}
+.about-wrapper .right{
+    float: right;
+    width: 50%;
+}
+.about-wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.about-wrapper li::before{
+    content: '\2713';
+    color: #e63946;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+.counts{
+    margin: 3rem auto;
+   
+}
+.count-item{
+     
+    float: left;
+    width: 25%;
+    text-align: center;
+     padding: 1.6rem;
+}
+.count-item span{
+
+font-weight: bold;
+
+}
+.count-item p{
+    margin-top: 1.2rem;
+    font-weight: 700;
+    color: gray;
+    font-size: 1.8rem;
+}
+.counts::after{
+    content: "";
+    display: block;
+    clear: both;
+
+}
+.cta-banner{
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    color: #f4f4f4;
+    padding: 1rem;
+    box-shadow: 5px 5px 20px #00000044;
+    margin-top: 3rem;
+}
+
+.cta-banner-left{
+    width: 70%;
+    float: left;
+    
+}
+.cta-banner-right{
+    width: 30%;
+    float: right;
+    text-align: right;
+    
+}
+.cta-line{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+.btn-cta{
+    text-align: center;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 3rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 1.6rem 2.5rem;
+    color: #fff;
+}
+.cta-banner::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+/*#########################################################*/
+/*################# Contact Page Stylings #################*/
+
+.contact-form{
+    padding: 5rem 0;
+    background-color: #f7f7f7;
+}
+
+.form-wrapper{
+    
+
+}
+.form-wrapper .company-address{
+    height: 750px;
+    float: left;
+    width: 49%;
+    background-color:#fff;
+    padding: 1rem;
+}
+
+.form-wrapper .company-address:hover{
+    border: 2px solid red;
+}
+
+
+.form-wrapper .company-address i{
+    display: inline-block;
+    margin-right: 1rem;
+
+}
+.form-wrapper .company-address h2{
+    display: inline-block;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.form-wrapper .address-group{
+    margin-bottom: 3rem;
+}
+.form-wrapper img{
+    width: 100%;
+    min-height: 40rem;
+    object-fit: cover;
+    object-position: right;
+    box-shadow: 5px 5px 20px 0px #263238;
+}
+
+.form-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/*#########################################################*/
+
+/*##################### form Stylings #####################*/
+.form-wrapper .form{
+    height: 750px;
+    
+    float: right;
+    width: 49%;
+    background-color:#fff;
+    padding: 1rem;
+    font-size: 1.6rem;
+}
+.form-wrapper .form:hover{
+    border: 2px solid red;
+}
+.form-wrapper .form h1{
+    padding-top: 1rem;
+}
+.form-wrapper .form h1::after{
+    margin-top: 1.8rem;
+    content: "";
+    display: block;
+    
+}
+
+.form-wrapper .form p{
+    margin: 3rem auto;
+}
+
+.form-wrapper .form label{
+    display: block;
+    padding-bottom: 1rem;
+}
+.form-wrapper .form label::after{
+   content: ' *';
+   color: #e63946;
+}
+
+.form-wrapper .form input{
+    width: 100%;
+    padding: 1rem;
+}
+.form-wrapper .form textarea{
+    width: 100%;
+    padding: 1rem;
+}
+.form-wrapper .form .form-group{
+    margin: 3rem auto;
+}
+
+.form-btn{
+    display: block;
+    margin:  0 auto;
+    padding: 0.56em 3em;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background: #e63946;
+    color: #f4f4f4;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/*#########################################################*/
+/*###################### MEDIA Quries #####################*/
+
+@media (max-width:996px){
+    html{
+        font-size: 50%;
+    }
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .header-content p{
+        display: none;
+    }
+    .header-content h1{
+        margin-bottom: 5rem;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+
+    .row2 .text-box h2{
+        letter-spacing: .5rem;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box2, .features .box3{
+         box-shadow: 5px 5px 20px 0 #555555;
+        background-color: #263238;
+        margin-top: 2rem;
+    }
+    .features .box1{
+         box-shadow: 5px 5px 20px 0 #555555;
+    background-color: #263238;
+    }
+    .features .container .box-wrapper{
+        background-color: transparent;
+        box-shadow: none;
+    }
+     .features .box1:hover,
+    .features .box2:hover,
+    .features .box3:hover{
+        border: 2px solid white;
+    }
+    .features .box1:active, 
+    .features .box2:active,
+    .features .box3:active{
+        border: 2px solid white;
+    } 
+    
+    .cta-banner-left, 
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .cta-line{
+        margin-bottom: 2rem;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    .form-wrapper .form input,
+    .form-wrapper .form textarea{
+        border: 1.5px solid black;
+    }
+    .form-wrapper .form input:focus,
+    .form-wrapper .form textarea:focus{
+        background-color: #0be2ff3b;
+        color: #1f0174;
+        font-weight: 600;
+        box-shadow: 0px 1px 20px 0px rgba(0, 81, 255, 0.356);
+    }
+   
+}
+
+@media (min-width:501px) and (max-width:786px){
+     html{
+        font-size: 50%;
+    }
+    p{
+        font-size: 1.8rem;
+    }
+    .navbar .logo, .navbar .nav-items{
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .header-content h1{
+        margin-bottom: 5rem;
+    }
+
+    .row{
+        height: auto;
+        width: 100%;
+    }
+    .row .img-box, .row .text-box{
+        float: none;
+        display: block;
+        text-align: center;
+        width: 100%;
+    }
+    .features .box{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features .box2, .features .box3{
+         box-shadow: 5px 5px 20px 0 #555555;
+        background-color: #263238;
+        margin-top: 2rem;
+    }
+    .features .box1{
+         box-shadow: 5px 5px 20px 0 #555555;
+    background-color: #263238;
+    }
+    .features .container .box-wrapper{
+        background-color: transparent;
+        box-shadow: none;
+    }
+     .features .box1:hover,
+    .features .box2:hover,
+    .features .box3:hover{
+        border: 2px solid white;
+    }
+    .features .box1:active, 
+    .features .box2:active,
+    .features .box3:active{
+        border: 2px solid white;
+    } 
+    
+    .cta-banner-left, 
+    .cta-banner-right{
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+    .cta-line{
+        margin-bottom: 2rem;
+    }
+
+    .form-wrapper .company-address{
+        float: none;
+        width: 100%;
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .form-wrapper .form{
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-bottom: 5rem;
+    }
+    .form-wrapper .form input,
+    .form-wrapper .form textarea{
+        border: 1.5px solid black;
+    }
+    .form-wrapper .form input:focus,
+    .form-wrapper .form textarea:focus{
+        background-color: #0be2ff3b;
+        color: #1f0174;
+        font-weight: 600;
+        box-shadow: 0px 1px 20px 0px rgba(0, 81, 255, 0.356);
+    }
+}
+
+@media (orientation:landscape) and (max-height:500px){
+    .header{
+        height: 90vmax;
+    }
+}
+
+/*#########################################################*/
